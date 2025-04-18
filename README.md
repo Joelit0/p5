@@ -10,12 +10,12 @@ a los usuarios leer, modificar y borrar sus datos. También existe un endpoint p
 
 | Método | Ruta | Descripción | Respuestas |
 |--------|------|-------------|------------|
-|        |      |             |            |
-|        |      |             |            |
-|        |      |             |            |
-|        |      |             |            |
-|        |      |             |            |
-|        |      |             |            |
+|   POST     |    /api/users  |       Registro de un nuevo usaurio      |     201 Created, 409 Conflict       |
+|     POST   |   /api/users/me/session   |       Inicio de sesión      |      201 Created, 401 Unauthorized      |
+|   DELETE     |   /api/users/me/session   |        Cierre de sesión     |    204 No Content, 401 Unauthorized        |
+|   GET     |   /api/users/me   |       Obtener perfil de un usuario logueado      |   200 OK, 401 Unauthorized         |
+|     PUT   |   /api/users/me   |       Actualizar perfil  de un usuario logueado     |   200 OK, 401 Unauthorized         |
+|   DELETE     |    /api/users/me  |      Dar de baja un usuario logueado       |     204 No Content, 401 Unauthorized       |
 
 
 ## Comandos 
